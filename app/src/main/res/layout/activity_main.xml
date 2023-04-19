@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
@@ -66,9 +66,9 @@
                 android:layout_height="match_parent"
                 android:layout_margin="15dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/todo"
                 android:onClick="playerTap"
-                android:tag="1"
-                android:contentDescription="@string/todo" />
+                android:tag="1" />
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -76,10 +76,10 @@
                 android:layout_height="match_parent"
                 android:layout_margin="15dp"
                 android:layout_weight="1"
-                android:onClick="playerTap"
-                android:tag="2"
                 android:contentDescription="@string/Image0"
+                android:onClick="playerTap"
                 android:paddingStart="15dp"
+                android:tag="2"
                 tools:ignore="RtlSymmetry" />
         </LinearLayout>
 
@@ -96,10 +96,10 @@
                 android:layout_height="match_parent"
                 android:layout_margin="15dp"
                 android:layout_weight="1"
-                android:onClick="playerTap"
-                android:tag="3"
                 android:contentDescription="@string/Image0"
+                android:onClick="playerTap"
                 android:paddingEnd="15dp"
+                android:tag="3"
 
                 tools:ignore="NestedWeights,RtlSymmetry" />
 
@@ -109,9 +109,9 @@
                 android:layout_height="match_parent"
                 android:layout_margin="15dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/Image0"
                 android:onClick="playerTap"
-                android:tag="4"
-                android:contentDescription="@string/Image0" />
+                android:tag="4" />
 
             <ImageView
                 android:id="@+id/imageView7"
@@ -121,8 +121,8 @@
                 android:layout_weight="1"
                 android:contentDescription="@string/Image0"
                 android:onClick="playerTap"
-                android:tag="5"
                 android:paddingStart="15dp"
+                android:tag="5"
                 tools:ignore="RtlSymmetry" />
         </LinearLayout>
 
@@ -139,21 +139,21 @@
                 android:layout_height="match_parent"
                 android:layout_margin="15dp"
                 android:layout_weight="1"
-                android:onClick="playerTap"
-                android:tag="6"
                 android:contentDescription="@string/Image0"
+                android:onClick="playerTap"
                 android:paddingEnd="15dp"
+                android:tag="6"
                 tools:ignore="NestedWeights,RtlSymmetry" />
 
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="playerTap"
-                android:tag="7"
                 android:layout_margin="15dp"
                 android:layout_weight="1"
-                android:contentDescription="@string/Image0" />
+                android:contentDescription="@string/Image0"
+                android:onClick="playerTap"
+                android:tag="7" />
 
             <ImageView
                 android:id="@+id/imageView10"
@@ -161,13 +161,38 @@
                 android:layout_height="match_parent"
                 android:layout_margin="15dp"
                 android:layout_weight="1"
-                android:onClick="playerTap"
-                android:tag="9"
                 android:contentDescription="@string/Image0"
+                android:onClick="playerTap"
                 android:paddingStart="15dp"
+                android:tag="8"
                 tools:ignore="RtlSymmetry" />
+
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/status"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:onClick="gameReset"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status"
+        tools:ignore="VisualLintBounds" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

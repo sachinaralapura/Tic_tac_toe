@@ -4,4 +4,6 @@
     <string name="MainGrid">OurMainGrid</string>
     <string name="Image0">image0</string>
     <string name="todo">TODO</string>
+    <string name="status">X\'s turn to play</string>
+    <string name="reset">reset</string>
 </resources>
