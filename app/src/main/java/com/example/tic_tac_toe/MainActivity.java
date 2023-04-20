@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                    else
                        winner = "O won";
                    Toast.makeText(getApplicationContext(),winner,Toast.LENGTH_SHORT).show();
-
+//                    gameReset(img);
                }
         }
     }
